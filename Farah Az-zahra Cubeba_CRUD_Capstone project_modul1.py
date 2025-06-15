@@ -25,13 +25,18 @@ tabel_data = {
 
 # Login Program
 def login():
-    username =input('Masukkan username Anda:')
-    password =input('Masukkan password Anda: ')
-    if username == 'owner' and password == '123':
-        print('\n Login berhasil! Selamat datang Farah!\n')
-    else:
-        print('\nLogin gagal!Program akan keluar secara otomatis\n')
-        exit()
+    attempts = 0
+    while attempts < 3:
+        username = input('Masukkan username Anda: ')
+        password = input('Masukkan password Anda: ')
+        if username == 'owner' and password == '123':
+            print('\n Login berhasil! Selamat datang Farah! \n')
+            return
+        else:
+            print('\n Login gagal. Coba lagi.\n')
+            attempts += 1
+    print('\n Kesempatan habis. Program keluar secara otomatis.\n')
+    exit()
 
 # Menampilkan Data Karyawan
 def data_karyawan():
