@@ -4,12 +4,12 @@ CRUD (Create, Read, Update, Delete) program applications are developed as part o
 
 ## Features
 - **Create**: Add new employee records.
-- **Read**: Display existing employee information.
+- **Read**: Display all or several existing employee information.
 - **Update**: Modify employee details.
 - **Delete**: Remove employee records.
 - **Additional Features**:
     - Login Program
-    - Search
+    - Search by name or employee ID.
     - Employee's statistics
     - Exit Program
  
