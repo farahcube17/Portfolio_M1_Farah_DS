@@ -36,9 +36,8 @@ def login():
 # Menampilkan Data Karyawan
 def tampilkan_karyawan():
     while True:
-        print('\n1.Tampilkan seluruh karyawan')
-        print('2.Cari karyawan berdasarkan No ID')
-        #print('\n3. Kembali ke menu utama')
+        print('\n1.Tampilkan seluruh data karyawan')
+        print('2.Cari karyawan berdasarkan No.ID')
         pilihan = input("Pilih menu (1-2): ")
 
         if pilihan == '1':
@@ -49,8 +48,6 @@ def tampilkan_karyawan():
             pencarian_dataID()
             input('\nTekan ENTER untuk kembali ke menu utama...')
             return
-        #elif pilihan == '3':
-        #    return
         else:
             print("Pilihan tidak valid. Silakan coba lagi.")
 
